@@ -97,12 +97,12 @@ async def next_page(bot, query):
     elif off_set is None:
         btn.insert(0,
             [
-                InlineKeyboardButton("Updates", url="https://t.me/VJ_Botz"),
+                InlineKeyboardButton("🍿 GROUP 🍿", url="https://t.me/+zoz4o0Wapis2NTQ9"),
             ]
         )
         btn.insert(1,
             [
-                InlineKeyboardButton("🍿 YouTube Channel 🍿", url="https://youtube.com/@Tech_VJ"),
+                InlineKeyboardButton("Updates", url="https://t.me/+_FicYBoITVkyMzdl"),
             ]
         )
         btn.append(
@@ -412,10 +412,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons = [[
-            InlineKeyboardButton('💝 Subscribe YouTube Channel 💗', url=f'http://youtube.com/@Tech_VJ')
-            ],[
-            InlineKeyboardButton('♻️ Update Channel ♻️', url=f'https://t.me/VJ_Botz')
+        buttons =  [[
+            InlineKeyboardButton("Updates", url="https://t.me/+_FicYBoITVkyMzdl"),
+            InlineKeyboardButton("🍿 GROUP 🍿", url="https://t.me/+zoz4o0Wapis2NTQ9")
             ],[
             InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
             InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
