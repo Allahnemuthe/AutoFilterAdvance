@@ -44,7 +44,7 @@ REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL)
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002150857702'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001838505515'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Nj_movies_HD1')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
