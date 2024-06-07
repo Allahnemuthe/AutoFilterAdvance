@@ -11,7 +11,7 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', TechVJBot')
+SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '7679954'))
 API_HASH = environ.get('API_HASH', '4af51af8f1a8b06ca2b076370ba93fba')
 BOT_TOKEN = environ.get('BOT_TOKEN', "5747397885:AAG17pAl1B1CjpLoNU2BmdC82Bq6IcXtuis")
