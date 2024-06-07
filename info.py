@@ -11,7 +11,7 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'Media_search')
+SESSION = environ.get('SESSION', TechVJBot')
 API_ID = int(environ.get('API_ID', '7679954'))
 API_HASH = environ.get('API_HASH', '4af51af8f1a8b06ca2b076370ba93fba')
 BOT_TOKEN = environ.get('BOT_TOKEN', "5747397885:AAG17pAl1B1CjpLoNU2BmdC82Bq6IcXtuis")
@@ -33,7 +33,7 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://alanwalker:alanwalker@cluster0.kcqso5a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "alanwalker")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'techvjcollection')
 
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL', '-1001206577702')
