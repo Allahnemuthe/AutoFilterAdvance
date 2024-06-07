@@ -97,12 +97,13 @@ async def next_page(bot, query):
     elif off_set is None:
         btn.insert(0,
             [
-                InlineKeyboardButton("Updates", url="https://t.me/VJ_Botz"),
+                InlineKeyboardButton('💠 GᏒԾUᎮ 💠', url='https://t.me/CiNeMaL0KaM_GrOuP'),
+                InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/CiNeMaLoKaM_MoVieS')
             ]
         )
         btn.insert(1,
-            [
-                InlineKeyboardButton("🍿 YouTube Channel 🍿", url="https://youtube.com/@Tech_VJ"),
+           [
+               InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url='https://t.me/+P2f6u3QOlrVmZThl')
             ]
         )
         btn.append(
@@ -413,13 +414,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('💝 Subscribe YouTube Channel 💗', url=f'http://youtube.com/@Tech_VJ')
+                InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('♻️ Update Channel ♻️', url=f'https://t.me/VJ_Botz')
+                InlineKeyboardButton('💠 GᏒԾUᎮ 💠', url='https://t.me/CiNeMaL0KaM_GrOuP'),
+                   InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/CiNeMaLoKaM_MoVieS')
             ],[
-            InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
-            InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
-        ]]
+                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+            ],[
+                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url='https://t.me/+P2f6u3QOlrVmZThl')
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
