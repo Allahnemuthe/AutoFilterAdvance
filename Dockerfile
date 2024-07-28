@@ -9,4 +9,4 @@ RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 RUN mkdir /AutoFilterAdvance
 WORKDIR /AutoFilterAdvance
 COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
+CMD gunicorn app:app & python3 main.py
